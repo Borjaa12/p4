@@ -26,6 +26,7 @@ Cada título contiene:
   "año": 2018,
   "club": "Real Madrid"
 }
+```
 
 ## 📌 Endpoints del API
 
