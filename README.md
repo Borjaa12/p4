@@ -26,3 +26,33 @@ Cada título contiene:
   "año": 2018,
   "club": "Real Madrid"
 }
+
+## 📌 Endpoints del API
+
+| Método | Ruta              | Descripción                       | Cuerpo requerido | Posibles respuestas |
+|--------|-------------------|-----------------------------------|------------------|----------------------|
+| GET    | `/titulos`        | Obtener todos los títulos         | No               | 200 OK               |
+| GET    | `/titulos/{id}`   | Obtener un título por ID          | No               | 200 OK / 404 Not Found |
+| POST   | `/titulos`        | Crear un nuevo título             | ✅ JSON          | 200 OK               |
+| PUT    | `/titulos/{id}`   | Actualizar un título existente    | ✅ JSON          | 200 OK / 404 Not Found |
+| DELETE | `/titulos/{id}`   | Eliminar un título por su ID      | No               | 204 No Content / 404 Not Found |
+
+
+## ⚙️ Cómo ejecutar el proyecto
+
+1. Clona el repositorio: git clone https://github.com/borja12/p4.git
+
+2. Ábrelo con IntelliJ IDEA
+
+3. Ejecuta la clase: Cr7ApiApplication.java
+
+4. Accede al backend desde: http://localhost:8080
+
+
+## 🌐 Integración con Web (Frontend)
+
+Este backend está conectado a una página web creada previamente con HTML, CSS y JavaScript.  
+La web usa `fetch()` para comunicarse con esta API REST y mostrar los títulos en tiempo real.
+
+📍 **Nota importante:**  
+Para que la funcionalidad de edición de títulos en la web funcione correctamente, es necesario tener el backend ejecutándose localmente en `http://localhost:8080`.
